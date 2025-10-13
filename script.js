@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (area.value.trim() !== '') {
             const areaValue = parseFloat(area.value);
             if (isNaN(areaValue) || areaValue < 1) {
-                displayError('area', 'Area must be a number greater than or equal to 1 $m^2$.');
+                displayError('area', 'Area must be a number greater than or equal to 1 m^2.');
             } else {
                 markValid('area');
             }
@@ -99,4 +99,5 @@ document.addEventListener('DOMContentLoaded', () => {
             form.querySelector('.is-invalid')?.focus();
         }
     });
+
 });
