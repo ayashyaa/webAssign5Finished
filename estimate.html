@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Home — Request an Estimate</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estimate.css">
+</head>
+<body class="estimate-page bg-cream">
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-deep-blue fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="main.html">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="La Home Logo" width="36" height="36" class="me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item"><a class="nav-link active" href="main.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Studio</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html#founder">Leila</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="estimate.html">Request Estimate</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero-section text-center text-cream bg-oxide-blue">
+    <div class="container py-5">
+      <h1 class="hero-title mb-2">Request an Estimate</h1>
+      <p class="hero-subtitle mb-0">Tell us about your project — we’ll prepare a personalized estimate for you.</p>
+    </div>
+  </section>
+
+  <section id="estimate-form" class="py-4" aria-label="Estimate request form">
+    <div class="container">
+      <h2 class="section-title">Project Details</h2>
+
+      <form action="#" method="post" class="estimate-card p-4 rounded-3">
+        <div class="row g-4">
+          <div class="col-12 col-lg-6">
+            <fieldset class="m-0 p-0 border-0">
+              <legend class="fieldset-title">Contact Information</legend>
+
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+
+              <label for="email" class="form-label mt-3">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+
+              <label for="phone" class="form-label mt-3">Phone</label>
+              <input type="tel" id="phone" name="phone" class="form-control">
+            </fieldset>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <fieldset class="m-0 p-0 border-0">
+              <legend class="fieldset-title">Project Information</legend>
+
+              <label for="project-type" class="form-label">Project Type</label>
+              <select id="project-type" name="project-type" class="form-select" required>
+                <option value="">-- Select --</option>
+                <option value="apartment">Apartment Interior</option>
+                <option value="house">House Interior</option>
+                <option value="commercial">Commercial Space</option>
+                <option value="exterior">Exterior Design</option>
+                <option value="other">Other</option>
+              </select>
+
+              <label for="area" class="form-label mt-3">Approximate Area (m²)</label>
+              <input type="number" id="area" name="area" min="1" class="form-control">
+
+              <label for="budget" class="form-label mt-3">Estimated Budget</label>
+              <input type="text" id="budget" name="budget" class="form-control">
+
+              <label for="deadline" class="form-label mt-3">Desired Deadline</label>
+              <input type="date" id="deadline" name="deadline" class="form-control">
+
+              <label for="message" class="form-label mt-3">Additional Details</label>
+              <textarea id="message" name="message" rows="6" class="form-control" placeholder="Tell us more about your vision..."></textarea>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+          <button type="submit" class="btn btn-danger px-4 fw-bold">Submit Request</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="page-footer py-4 bg-deep-blue text-cream" aria-label="Footer">
+    <div class="container text-center">
+      <p class="mb-2">&copy; Asima Abdikarimova, Ayazhan Ayetova</p>
+      <nav aria-label="Footer navigation" class="d-flex justify-content-center gap-3">
+        <a href="about.html" class="footer-link">Back to About Studio</a>
+        <a href="#hero" class="footer-link">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
