@@ -1,15 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  
+  color: #333; 
+  overflow-x: hidden;
   padding-top: 70px;
   
   background-color: rgb(255, 248, 240); 
   margin: 0;
   padding-left: 0; 
   padding-right: 0; 
+  overflow-x: hidden;
 }
+
 
 section {
   width: auto; 
@@ -20,7 +22,7 @@ section {
 h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: #222;
+  color: #222; 
   border-bottom: 2px solid #D1495B;
   display: inline-block;
   padding-bottom: 0.3rem;
@@ -155,14 +157,14 @@ h3 {
 .choose-text h3 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  color: #003D5B;
+  color: #003D5B; 
   font-size: 1.3rem;
 }
 
 .choose-text p {
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: #444;
+  color: #444; 
 }
 
 .choose-image {
@@ -379,10 +381,10 @@ aside .p-3.mb-4.rounded {
 }
 
 
-
+/* DARK MODE STYLES */
 .dark-mode {
     background-color: #0D1117 !important; 
-    color: #E6EDF3 !important;
+    color: #E6EDF3 !important; 
 }
 
 
@@ -405,17 +407,22 @@ aside .p-3.mb-4.rounded {
     color: #F07178 !important;
 }
 
-
 .dark-mode h1,
 .dark-mode h2,
-.dark-mode h3,
-.dark-mode p {
+.dark-mode h3 { 
     color: #E6EDF3 !important; 
 }
 
+.dark-mode h2 { 
+    border-bottom: 2px solid #F07178; 
+}
 
-
-
+.dark-mode .choose-text h3 {
+    color: #F07178 !important; 
+}
+.dark-mode .choose-text p {
+    color: #E6EDF3 !important;
+}
 
 
 .dark-mode aside {
@@ -457,7 +464,7 @@ aside .p-3.mb-4.rounded {
     color: #E6EDF3 !important;
 }
 
-.dark-mode .card,
+
 .dark-mode .accordion-container,
 .dark-mode .estimate-card {
     background-color: #1E2A36 !important;
@@ -465,14 +472,18 @@ aside .p-3.mb-4.rounded {
     border-color: #333 !important;
 }
 
+
 .dark-mode .custom-modal .modal-content-js {
-    background-color: #FFFFFF !important; 
+    background-color: #1E2A36 !important; 
+    border-color: #333 !important;
 }
 
 
-.dark-mode .custom-modal .modal-content-js *,
-.dark-mode .custom-modal .modal-content-js h2 {
-    color: #0D1117 !important; 
+
+.dark-mode .custom-modal .modal-content-js h2,
+.dark-mode .custom-modal .modal-content-js label,
+.dark-mode .custom-modal .modal-content-js p {
+    color: #E6EDF3 !important; 
 }
 
 .dark-mode input,
@@ -486,4 +497,16 @@ aside .p-3.mb-4.rounded {
 
 .dark-mode footer {
     background-color: #1E2A36 !important;
+}
+
+.dark-mode .why-choose-us { 
+    background: #1E2A36 !important;
+}
+
+.dark-mode #services {
+  background: #1E2A36 !important;
+}
+
+.dark-mode main {
+    background-color: #0D1117 !important; 
 }
